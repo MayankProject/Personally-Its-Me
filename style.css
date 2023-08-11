@@ -9,6 +9,9 @@ body, html{
     background: #ffffff;
     transition: 0.9s;
 }
+body{
+    visibility: hidden;
+}
 ::-webkit-scrollbar{
     display: none;
 }
