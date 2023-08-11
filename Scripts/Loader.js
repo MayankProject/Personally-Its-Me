@@ -21,12 +21,12 @@ setInterval(() => {
 
 document.onreadystatechange = function() {
     if (document.readyState !== "complete") {
-        document.querySelector("body").style.height = "100vh";
-        document.querySelector("body").style.visibility = "hidden";
-        document.querySelector(".loader").style.visibility = "visible";
+        document.querySelector(".loader").style.opacity = "1";
     } else {
-        document.querySelector("body").style.height = "unset";
-        document.querySelector(".loader").style.display = "none";
-        document.querySelector("body").style.visibility = "visible";
+
+        document.querySelector(".loader").style.opacity = "0";
+        setTimeout(() => {
+            document.body.classList.remove('not-loaded')
+        }, 400);
     }
 };
