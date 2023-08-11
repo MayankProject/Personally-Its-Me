@@ -9,8 +9,10 @@ body, html{
     background: #ffffff;
     transition: 0.9s;
 }
-body{
-    visibility: hidden;
+body.not-loaded{
+    background: #000000;
+    height: 100vh;
+    overflow: hidden;
 }
 ::-webkit-scrollbar{
     display: none;
@@ -44,12 +46,12 @@ a{
     position: fixed;
     top: 0vh;
     background: black;
-    z-index: 1;
+    z-index: 5;
     animation-name: loaderBg;
     animation-duration: 0.4s;
     animation-iteration-count: 1;
     animation-delay: 1.2s;
-    
+    transition: 0.3s;
     animation-timing-function: cubic-bezier( 0.93, 0.31, 0.15, 0.59 ) ;
     animation-fill-mode: forwards;
 }
