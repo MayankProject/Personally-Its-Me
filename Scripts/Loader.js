@@ -21,9 +21,11 @@ setInterval(() => {
 
 document.onreadystatechange = function() {
     if (document.readyState !== "complete") {
+        document.querySelector("body").style.height = "100vh";
         document.querySelector("body").style.visibility = "hidden";
         document.querySelector(".loader").style.visibility = "visible";
     } else {
+        document.querySelector("body").style.height = "unset";
         document.querySelector(".loader").style.display = "none";
         document.querySelector("body").style.visibility = "visible";
     }
