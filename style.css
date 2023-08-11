@@ -50,6 +50,7 @@ a{
     animation-name: loaderBg;
     animation-duration: 0.4s;
     animation-iteration-count: 1;
+    pointer-events:none;
     animation-delay: 1.2s;
     transition: 0.3s;
     animation-timing-function: cubic-bezier( 0.93, 0.31, 0.15, 0.59 ) ;
