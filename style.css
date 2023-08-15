@@ -500,7 +500,7 @@ a{
     transform-origin: top top;
     transition-timing-function: cubic-bezier(0.57,-0.63,0.27,1.55);;
     overflow: hidden;
-    max-height: 100vh;
+    max-height: 45rem;
 }
 .pop-culture > .content{
     color: #fff;
@@ -615,7 +615,7 @@ a{
     display: flex;
     /* padding: 100px; */
     align-items: center;
-    height: 100vh;
+    max-height: 43rem;
     justify-content: space-between;
     position: relative;
 }
