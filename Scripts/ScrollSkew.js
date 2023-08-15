@@ -19,5 +19,5 @@ window.addEventListener('scroll', function() {
     if(timerSkew !== null) {
         clearTimeout(timerSkew);        
     }
-    timerSkew = setTimeout(doAfterStoppedSkew, 150);
+    timerSkew = setTimeout(doAfterStoppedSkew, 20);
 }, false);
