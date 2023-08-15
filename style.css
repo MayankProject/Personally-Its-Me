@@ -531,6 +531,7 @@ a{
     object-fit: cover;
     transition: 0.1s;
     opacity: 0;
+    user-select: none;
     filter: blur(0.3px) brightness(0.4);
 }
 .slider-image:hover{
@@ -715,14 +716,7 @@ a{
 
 /* Media Queries  */
 
-@media screen and (max-width:900px) {
-    .main-heading{
-        left: -40px;
-        scale: 0.8;
-    }
-    .hitler-section span{
-        max-width: unset;
-    }
+@media screen and (max-width:1000px){
     .gallery{
         border-left: none !important;
         border-right: none !important;
@@ -740,7 +734,15 @@ a{
         border-bottom: 5px solid #fff;
         z-index: 3;
     }
-    
+} 
+@media screen and (max-width:900px) {
+    .main-heading{
+        left: -40px;
+        scale: 0.8;
+    }
+    .hitler-section span{
+        max-width: unset;
+    }
 }
 @media screen and (max-width:720px) {
     .context{
