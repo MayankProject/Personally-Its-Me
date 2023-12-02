@@ -32,6 +32,4 @@ addEventListener(('scroll'), ()=>{
     })
     lastPoint = scrollY
 
-    // Airtel@123
-    // @rishi@2001
 })
